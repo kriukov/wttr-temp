@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="wttr-temp-button"
+                   label="Temp: …"
+                   class="toolbarbutton-1 chromeclass-toolbar-additional"
+                   tooltiptext="Current temperature from wttr.in"
+                   image="chrome://tempbutton/skin/temp-icon.png"/>
+  </toolbarpalette>
+  <script src="chrome://tempbutton/content/tempButton.js"/>
+</overlay>

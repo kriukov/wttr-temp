@@ -1,0 +1,40 @@
+window.addEventListener("load", function() {
+    console.log("Temp button script loaded");
+
+    let button = document.getElementById("wttr-temp-button");
+    if (!button) {
+        console.log("Button not found!");
+        return;
+    }
+
+    console.log("Button found, fetching temperature...");
+
+    fetch("https://wttr.in/?format=%t")
+        .then(response => {
+            console.log("Fetch response received:", response);
+            return response.text();
+        })
+        .then(temp => {
+            console.log("Temperature:", temp);
+            button.setAttribute("label", `Temp: ${temp}`);
+        })
+        .catch(err => {
+            console.error("WTTR fetch failed:", err);
+            button.setAttribute("label", "Temp: N/A");
+        });
+
+    button.addEventListener("command", () => {
+        console.log("Button clicked, refreshing...");
+        button.setAttribute("label", "Updating…");
+        fetch("https://wttr.in/?format=%t")
+            .then(r => r.text())
+            .then(temp => {
+                console.log("Temperature refreshed:", temp);
+                button.setAttribute("label", `Temp: ${temp}`);
+            })
+            .catch(err => {
+                console.error("WTTR refresh failed:", err);
+                button.setAttribute("label", "Temp: N/A");
+            });
+    });
+}, false);
