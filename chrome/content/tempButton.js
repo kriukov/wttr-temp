@@ -6,6 +6,7 @@ window.addEventListener("load", function() {
     // Map wttr.in %C to local icons
     const iconMap = {
         "Clear": "chrome://tempbutton/skin/sunny.png",
+        "Sunny": "chrome://tempbutton/skin/sunny.png",
         "Partly cloudy": "chrome://tempbutton/skin/partly-cloudy.png",
         "Cloudy": "chrome://tempbutton/skin/cloudy.png",
         "Overcast": "chrome://tempbutton/skin/overcast.png",
@@ -17,6 +18,7 @@ window.addEventListener("load", function() {
         "Snow": "chrome://tempbutton/skin/snow.png",
         "Thunderstorm": "chrome://tempbutton/skin/thunder.png",
         "Light rain with thunderstorm": "chrome://tempbutton/skin/light-rain-with-thunderstorm.png",
+        "Rain in vicinity": "chrome://tempbutton/skin/cloudy.png",
         "Default": "chrome://tempbutton/skin/temp-icon-16.png"
     };
 
