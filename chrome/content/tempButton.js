@@ -15,6 +15,7 @@ window.addEventListener("load", function() {
         "Patchy rain possible": "chrome://tempbutton/skin/rain.png",
         "Light rain": "chrome://tempbutton/skin/rain.png",
         "Heavy rain": "chrome://tempbutton/skin/heavy-rain.png",
+        "Patchy rain nearby": "chrome://tempbutton/skin/patchy-rain.png",
         "Snow": "chrome://tempbutton/skin/snow.png",
         "Thunderstorm": "chrome://tempbutton/skin/thunder.png",
         "Light rain with thunderstorm": "chrome://tempbutton/skin/light-rain-with-thunderstorm.png",
